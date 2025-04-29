@@ -6,11 +6,11 @@ on:
     - cron: '0 * * * *'   # A cada hora (no minuto 0)
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  build:   # nome do job
+    runs-on: ubuntu-latest   #roda num computador disponibilizado pelo github
     steps:
       - name: Checkout do código
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3   # baixa todos os arquivos do meu repositório para esse ambiente, sugerido pelo gpt
 
-      - name: Rodar script ou comando
-        run: echo "Executando o workflow"
+      - name: Rodar script ou comando   
+        run: echo "Executando o workflow"   # retorna no terminal
